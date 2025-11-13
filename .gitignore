@@ -1,0 +1,12 @@
+# Node.js
+frontend/node_modules
+frontend/build
+frontend/.env
+
+# Go
+backend/bin
+backend/*.exe
+backend/*.env
+
+# VS Code
+.vscode/node_modules
