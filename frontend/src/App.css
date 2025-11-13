@@ -1,0 +1,256 @@
+/* 
+body {
+  background-color: #f4f5f7;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.kanban-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.kanban-container h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.kanban-board {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.kanban-column {
+  background: #ffffff;
+  border-radius: 10px;
+  width: 300px;
+  padding: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.kanban-column:hover {
+  transform: translateY(-5px);
+}
+
+.kanban-column h2 {
+  background: #007bff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.tarefa {
+  background-color: #f9f9f9;
+  border-left: 5px solid #007bff;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: left;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.tarefa h4 {
+  margin: 0;
+  color: #333;
+  font-size: 16px;
+}
+
+.tarefa p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.kanban-column:nth-child(1) h2 {
+  background: #ffb100;
+}
+
+.kanban-column:nth-child(1) .tarefa {
+  border-left-color: #ffb100;
+}
+
+.kanban-column:nth-child(2) h2 {
+  background: #17a2b8;
+}
+
+.kanban-column:nth-child(2) .tarefa {
+  border-left-color: #17a2b8;
+}
+
+.kanban-column:nth-child(3) h2 {
+  background: #28a745;
+}
+
+.kanban-column:nth-child(3) .tarefa {
+  border-left-color: #28a745;
+}
+
+.kanban-form {
+  margin-bottom: 20px;
+}
+
+.kanban-form input {
+  padding: 8px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.kanban-form button {
+  padding: 8px 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.kanban-form button:hover {
+  background: #0056b3;
+} */
+
+body {
+  background-color: #f4f5f7;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.kanban-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.kanban-form {
+  margin-bottom: 20px;
+}
+
+.kanban-form input {
+  padding: 8px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.kanban-form button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.kanban-form button:hover {
+  background-color: #0056b3;
+}
+
+.kanban-board {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.kanban-column {
+  background: #fff;
+  border-radius: 10px;
+  width: 300px;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.kanban-column h2 {
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.kanban-column:nth-child(1) h2 {
+  background-color: #f4f4f4;
+}
+
+.kanban-column:nth-child(2) h2 {
+  background-color: #e7f1ff;
+}
+
+.kanban-column:nth-child(3) h2 {
+  background-color: #d4edda;
+}
+
+.tarefa {
+  background-color: #f9f9f9;
+  border-left: 5px solid #007bff;
+  margin-top: 10px;
+  padding: 10px;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.tarefa h4 {
+  margin: 0;
+  color: #333;
+}
+
+.tarefa p {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Botões de mover tarefa */
+.botoes-mover {
+  margin-top: 8px;
+  display: flex;
+  gap: 6px;
+}
+
+.botoes-mover button {
+  flex: 1;
+  padding: 4px 6px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.botoes-mover button:hover {
+  opacity: 0.8;
+}
+
+/* Cores específicas para cada botão */
+.botoes-mover button:nth-child(1) {
+  background-color: #ffc107; /* amarelo/atualizar para a esquerda */
+  color: white;
+}
+
+.botoes-mover button:nth-child(2) {
+  background-color: #28a745; /* verde/atualizar para concluído */
+  color: white;
+}
+
+.botoes-mover button:nth-child(3) {
+  background-color: #dc3545; /* vermelho/excluir */
+  color: white;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+}
+footer a {
+  color: #007bff;
+  text-decoration: none;
+}
